@@ -82,6 +82,8 @@ font 가운데 정렬 : font-align : center
 
 ## 과제2 : 자기 프로필 만들기 
 
+<img width="399" alt="스크린샷 2024-02-05 오후 9 32 00" src="https://github.com/choiminjun94/TIL2024/assets/60457431/6ab221d3-b8a9-4c64-8fa2-05bfa6ba2794">
+
 ```html
  <img src="minjun.png" alt="프로필 이미지" style="display: block; margin-left: auto; margin-right: auto;">
     <h3 style="text-align: center; letter-spacing: 5px; font-size: 2.5vw;">MinJun</h3>
