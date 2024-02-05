@@ -1,0 +1,30 @@
+/* 우선 순위 : html 안의 style> id > class > tag */
+
+/* class 선언 */
+/* class 특징  1. 점 찍고 작명, 2. 이름 중복 피하기*/
+.profile{
+    display: block; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+.name{
+    text-align: center; 
+    letter-spacing: 5px; 
+    font-size: 2.5vw;
+}
+.content{
+    color: blueviolet;
+}
+/* 모든 p태그에 밑에 CSS 작용 */
+p{
+    text-align: center; 
+    font-size: 200%;
+    color: blue;
+}
+
+/* id선언 - 별로 안씀 */
+#special{
+    text-align: center; 
+    font-size: 200%;
+    color: chartreuse;
+}
