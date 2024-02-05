@@ -46,3 +46,50 @@ src 이미지 경로 // alt : 이미지를 보여줄수 없을때 텍스트로 �
 </h2>
 
 ```
+
+## 기본적인 웹페이즈 스타일링
+
+```txt
+
+이미지 가운데 정렬 : display: block; margin-left: auto; margin-right: auto
+font 사이즈 vw :  현재 브라우저 창의 너비 // %: 내 부모태그의 사이즈에 비례
+자간 사이즈 : letter-spacing
+font 가운데 정렬 : font-align : center
+
+글자 굵기 : font-weight or stong
+
+```
+
+```html 
+ <!-- 이미지 가운데 정렬 : display: block; margin-left: auto; margin-right: auto -->
+    <img src="lion.png" style="display: block; margin-left: auto; margin-right: auto;">
+
+    <!-- font 사이즈 vw :  현재 브라우저 창의 너비 // %: 내 부모태그의 사이즈에 비례 -->
+    <!-- 자간 사이즈 : letter-spacing-->
+    <!-- font 가운데 정렬 : font-align : center -->
+    <h3 style="letter-spacing: 5px; text-align: center;">LION</h3>
+    <!-- 일부 글자만 스타일링 -->
+    <!-- span : 아무 의미 없는 태그 -->
+    <!-- 글자 굵기 : font-weight or stong -->
+    <p>
+        <span style="color: red; font-weight:600;">King</span> of the safari</p>
+
+    <!-- 과제2 : 본인 프로필 페이지 제작 -->
+    <img src="minjun.png" alt="프로필 이미지" style="display: block; margin-left: auto; margin-right: auto;">
+    <h3 style="text-align: center; letter-spacing: 5px; font-size: 2.5vw;">MinJun</h3>
+
+```
+
+## 과제2 : 자기 프로필 만들기 
+
+```html
+ <img src="minjun.png" alt="프로필 이미지" style="display: block; margin-left: auto; margin-right: auto;">
+    <h3 style="text-align: center; letter-spacing: 5px; font-size: 2.5vw;">MinJun</h3>
+
+    <p style="text-align: center; font-size: 200%;">
+        <span style="color: red; font-weight: bolder;">
+            Front-end
+        </span>
+         Developer
+    </p>
+```
