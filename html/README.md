@@ -95,3 +95,65 @@ font 가운데 정렬 : font-align : center
          Developer
     </p>
 ```
+## CSS 만들고 첨부
+
+```txt 
+
+CSS의 우선 순위 
+
+html 안의 style> id > class > tag
+
+```
+## Tag 우선순위
+
+```txt
+
+.이름 : 클래스 선언
+태그 : 해당 태그에 전부 적용
+# : id 선언
+
+```
+
+## html에 css 선언
+
+```html
+
+<head>
+    <!-- CSS 폴더 -->
+    <link rel="stylesheet" href="../css/main.css" rel="stylesheet">
+</head>
+
+```
+
+## CSS 파일 작성
+```css
+/* class 선언 */
+/* class 특징  1. 점 찍고 작명, 2. 이름 중복 피하기*/
+.profile{
+    display: block; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+.name{
+    text-align: center; 
+    letter-spacing: 5px; 
+    font-size: 2.5vw;
+}
+.content{
+    color: blueviolet;
+}
+/* 모든 p태그에 밑에 CSS 작용 */
+p{
+    text-align: center; 
+    font-size: 200%;
+    color: blue;
+}
+
+/* id선언 - 별로 안씀 */
+#special{
+    text-align: center; 
+    font-size: 200%;
+    color: chartreuse;
+}
+
+```
