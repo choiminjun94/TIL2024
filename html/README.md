@@ -219,7 +219,7 @@ box-shadow : 그림자 효과
 
 > 이부분은 하기의 이미지를 만들기 위한 것
 
-사진추가 
+<img width="818" alt="스크린샷 2024-02-06 오후 5 29 12" src="https://github.com/choiminjun94/TIL2024/assets/60457431/ea67eec2-1881-4690-929a-fd8aee9771cc">
 
 ```html
 
