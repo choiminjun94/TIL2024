@@ -215,3 +215,79 @@ box-shadow : 그림자 효과
 }
 
 ```
+## 레이아웃 float 만들기 1
+
+> 이부분은 하기의 이미지를 만들기 위한 것
+
+사진추가 
+
+```html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/layout.css">
+    <title>레이아웃</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header"></div>
+        <div class="left-menu"></div>
+        <div class="right-menu"></div>
+        <div class="footer"></div>
+    </div>    
+</body>
+</html>
+
+```
+
+### css 설명
+
+```txt
+
+요소를 왼쪽정렬 (공중에 띄어져 있는것) > float: left
+float:left하는 이유 : div는 기본적으로 display:black이 되어있기에 한행을 전부 차지
+
+float 해결방안(공중에 띄어져 있는것의 해결방안)
+clear:both;
+
+```
+
+```css 
+
+.container{
+    width: 800px;
+}
+
+.header{
+    /* 부모태그 width의 100% */
+    width: 100%;
+    height: 100px;
+    background-color: aquamarine;
+}
+/* float:left하는 이유 : div는 기본적으로 display:black이 되어있기에 한행을 전부 차지 */
+.left-menu{
+    width: 20%;
+    height: 400px;
+    background-color: blue;
+    /* 요소를 왼쪽정렬 (공중에 띄어져 있는것) */
+    float: left;
+}
+.right-menu{
+    width: 80%;
+    height: 400px;
+    background-color: cadetblue;
+    /* 요소를 왼쪽정렬 (공중에 띄어져 있는것)*/
+    float: left;
+}
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: brown;
+    /* float 해결방안 */
+    clear:both;
+}
+
+```
