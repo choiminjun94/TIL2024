@@ -341,6 +341,98 @@ inline-block 사용 시 공백을 삭제 해주어야 한다.
     background-color: brown;
 }
 
+```
 
+## 레이아웃 과제 
+
+> 하기와 같은 레이아웃을 만들어야 한다. 
+
+사진 추가
+
+```txt
+
+ 그러기 위해선 구획을 먼저 나누어 주고 시작
+
+ 1. 본문과 사진이 들어갈 자리를 background-color로 표시
+ 2. 본문에서 사진, 이름, 시간을 작성
+ 3. 본문 작성
+ 4. 이미지 추가 
+
+순으로 하면 된다.  
+이때 미세 margin 및 padding도 들어간다. 
+```
+
+> 하기의 사진은 본인이 만들것 (헤더는 그냥 넣어봄)
+
+사진 추가 
+
+```html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/layoutHomeWork.css">
+    <title>레이아웃 과제</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p style="padding: 2px;">레이아웃 첫번째 과제</p>
+        </div>
+        <div class="content">
+            <img src="./minjun.png" alt="" style="width: 10%; float: left;">
+            <div class="blog-name">
+                <h4 style="margin: 8px;">최민준</h4>
+                <p style="margin: 8px;">1시간전</p>
+            </div>
+            <div class="blog-content">
+                <h4 style="margin: 10px;">더러운 화장실 변기엔 역시 Bref!!!!</div>
+                <p style="margin: 10px;"> 더러운 화장실 변기 청소떄문에 고생하시는 당신을 위한 아이템! 독일 변기 세정제 Bref!!!!</p>
+            </div>
+        </div>
+        <div class="blog-img">
+            <img src="./bref.png" alt="" class="size">
+        </div>
+    </div>
+</body>
+</html>
+
+```
+
+```css 
+
+.container{
+    width: 800px;
+}
+.header{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    border-style:solid;
+}
+.content{
+    width: 70%;
+    height: 300px;
+    float: left;
+    clear: both;
+}
+.blog-name{
+    float: left;
+}
+.blog-content{
+    clear: both;
+}
+.blog-img{
+    width: 20%;
+    height: 300px;
+    float: left;
+    background-color: pink;
+
+}
+.size{
+    width: 100%;
+}
 
 ```
