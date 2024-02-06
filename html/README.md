@@ -1,4 +1,5 @@
-# 240205 
+# HTML & CSS
+## 240205 
 ## HTML 기본태그 
 
 ``` txt 
@@ -154,6 +155,59 @@ p{
     text-align: center; 
     font-size: 200%;
     color: chartreuse;
+}
+
+```
+
+## 240206
+## div 박스 만들기 
+
+```txt 
+
+margin : 상하좌우 여백 
+padding : 상하좌우 안쪽 여백
+border : 테두리
+border-radius : 테두리 둥글게
+
+가운데 정렬 
+display: block;
+margin-left: auto;
+margin-right: auto;
+
+box-shadow : 그림자 효과 
+
+```
+그림자 참고 URL : https://codingbroker.tistory.com/65 
+
+```html 
+
+ <div class="box">박스 추가</div>
+
+```
+
+```css
+
+
+.box{
+    text-align: center;
+    background-color: aqua;
+    width: 200px;
+    
+    /* 상하좌우 여백 */
+    margin :10px;
+    /* 상하좌우 안쪽 여백 */
+    padding: 40px;
+ 
+    border-radius: 15px;
+
+    /* 가운데 정렬 */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+
+    /* 숙제3 - 박스에 그림자 효과 */
+    box-shadow: 10px 10px 0 0 ;
 }
 
 ```
