@@ -291,3 +291,56 @@ clear:both;
 }
 
 ```
+## 레이아웃 inline-block 만들기 
+
+> 공부한걸 정리를 하겠지만 안쓰는것이 좋다. 불편
+
+``` txt
+display: inline-block; - 내 크기만큼 차지하게 해주세요
+inline-block 사용 시 공백을 삭제 해주어야 한다.
+
+```
+
+```html
+ <div class="container">
+        <div class="header"></div>
+        <!-- css에서 display: inline-block;를 사용시 공백을 없애야 한다. -->
+        <div class="left-menu"></div><div class="right-menu"></div>
+        <div class="footer"></div>
+    </div>  
+```
+
+```css
+
+.container{
+    width: 800px;
+}
+
+.header{
+    /* 부모태그 width의 100% */
+    width: 100%;
+    height: 100px;
+    background-color: aquamarine;
+}
+.left-menu{
+    width: 20%;
+    height: 400px;
+    background-color: blue;
+    /* display: inline-block; - 내 크기만큼 차지하게 해주세요 */
+    display: inline-block;
+}
+.right-menu{
+    width: 80%;
+    height: 400px;
+    background-color: cadetblue;
+    display: inline-block;
+}
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: brown;
+}
+
+
+
+```
