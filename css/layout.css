@@ -8,22 +8,25 @@
     height: 100px;
     background-color: aquamarine;
 }
+/* float:left하는 이유 : div는 기본적으로 display:black이 되어있기에 한행을 전부 차지 */
 .left-menu{
     width: 20%;
     height: 400px;
     background-color: blue;
-    /* display: inline-block; - 내 크기만큼 차지하게 해주세요 */
-    display: inline-block;
+    /* 요소를 왼쪽정렬 (공중에 띄어져 있는것) */
+    float: left;
 }
 .right-menu{
     width: 80%;
     height: 400px;
     background-color: cadetblue;
-    display: inline-block;
+    /* 요소를 왼쪽정렬 (공중에 띄어져 있는것)*/
+    float: left;
 }
 .footer{
     width: 100%;
     height: 100px;
     background-color: brown;
+    /* float 해결방안 */
+    clear:both;
 }
-
