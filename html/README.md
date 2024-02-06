@@ -179,6 +179,10 @@ box-shadow : 그림자 효과
 ```
 그림자 참고 URL : https://codingbroker.tistory.com/65 
 
+
+![스크린샷 2024-02-06 오후 3 28 25](https://github.com/choiminjun94/TIL2024/assets/60457431/e9ed14c5-b575-4509-a02d-fdcb7de1008c)
+
+
 ```html 
 
  <div class="box">박스 추가</div>
