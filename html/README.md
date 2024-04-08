@@ -451,6 +451,9 @@ navbar>li는 직계 자손만 적용
 
 ```
 
+<img width="835" alt="스크린샷 2024-04-08 오후 2 40 35" src="https://github.com/choiminjun94/TIL2024/assets/60457431/a6ebf62f-32e7-4ae7-82ab-f1d256e8709f">
+
+
 ```html
 
  <!-- nav도 div랑 같지만 nav라고 알기 위해서 사용 -->
