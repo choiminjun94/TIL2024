@@ -660,3 +660,43 @@ position: absolute 시용 시 가운데 정렬
 
 
 ```
+## 과제 박스 겹치게
+
+```txt
+
+처음에 과제가 실패 했는데 이유는 div 위치를 잘못 잡아서 이다. 
+
+```
+
+```html
+
+<body style="margin: 0px;">
+    <div class="main-background">
+        <h4 class="main-title">Welcome To Our Mall</h4>
+        <!-- 숙제 세일즈 문구 적용 (버튼 추가)-->
+        <p class="sale-contect">Let's go meet the best quality shoes in the world </p>
+        <button class="button-css"> Click Here </button>
+    </div>
+    <!-- 과제  -->
+    <div class="homework">
+        <h4>How we design our shoes</h1>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+    </div>
+</body>
+
+```
+
+```css
+
+.homework{
+    background-color: #eee;
+    width: 700px;
+    /* 가운데 정렬 */
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    top: -50px;
+} 
+
+```

@@ -50,4 +50,12 @@
     margin: auto;    
     width: 200px;
 }
-
+.homework{
+    background-color: #eee;
+    width: 700px;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    top: -50px;
+}
