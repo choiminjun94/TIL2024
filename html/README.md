@@ -564,5 +564,25 @@ Margin-collapsing 참고 url : https://velog.io/@raram2/CSS-마진-상쇄Margin-
         border: none;
 
 ```
+##  position과 좌표
 
+```txt
+
+position 사용 시
+1. 좌표 이동 가능
+2. 공중에 뜸 (만약에 글씨가 있을 시 글씨에 영향을 주지 않는다.)
+
+position: relative : 내 원래 위치를 기준으로 이동
+position: static : 좌표이동 X
+position: fixed : 현재화면이 기준
+position: absolute : 내부모 태그 ( relative 가진 부모)
+
+position: absolute 시용 시 가운데 정렬
+
+    left: 0;
+    right: 0;
+    margin: auto;    
+    width: 200px;
+
+```
 
