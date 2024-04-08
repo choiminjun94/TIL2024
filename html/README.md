@@ -437,3 +437,68 @@ inline-block 사용 시 공백을 삭제 해주어야 한다.
 }
 
 ```
+## Nav 만들기 
+
+```txt
+
+1. nav라는 태그 생성
+   nav도 div랑 같지만 nav라고 알기 위해서 사용
+
+2. nav css 생성
+navbar li는 모두 아래의 css를 적용
+navbar>li는 직계 자손만 적용 
+
+
+```
+
+```html
+
+ <!-- nav도 div랑 같지만 nav라고 알기 위해서 사용 -->
+    <nav>
+        <ul class="navbar">
+            <li><a href="#">영화</a></li>
+            <li><a href="#">맛집</a></li>
+            <li><a href="#">IT</a></li>
+            <li><a href="#">PC</a></li>
+        </ul>
+    </nav>
+
+
+```
+
+```css
+
+/* navbar li는 모두 아래의 css를 적용 */
+.navbar li{
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    background-color: #eee;
+    padding: 15px;
+    border-radius: 10px;
+  
+}
+.navbar a{
+    font-size: 16px;
+    /* a태그 밑줄 제거 */
+    text-decoration: none;
+    /* 방문 후 표시색 변경*/
+}
+a:visited {
+    color : green;
+}
+a:hover {
+    color : red;
+}
+
+/* 만약에 space가 아닌 >를 사용시 직계 자식에만 적용 */
+/* 직계자식 예시 */
+/* 
+
+.navbar>li{
+    display: inline-block;
+}
+
+*/
+
+```

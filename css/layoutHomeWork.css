@@ -28,4 +28,37 @@
 }
 .size{
     width: 100%;
+    
 }
+/* navbar li는 모두 아래의 css를 적용 */
+.navbar li{
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    background-color: #eee;
+    padding: 15px;
+    border-radius: 10px;
+  
+}
+.navbar a{
+    font-size: 16px;
+    /* a태그 밑줄 제거 */
+    text-decoration: none;
+    /* 방문 후 표시색 변경*/
+}
+a:visited {
+    color : green;
+}
+a:hover {
+    color : red;
+}
+
+/* 만약에 space가 아닌 >를 사용시 직계 자식에만 적용 */
+/* 직계자식 예시 */
+/* 
+
+.navbar>li{
+    display: inline-block;
+}
+
+*/
