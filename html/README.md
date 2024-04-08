@@ -586,6 +586,9 @@ position: absolute 시용 시 가운데 정렬
 
 ```
 
+<img width="1366" alt="스크린샷 2024-04-08 오후 5 14 51" src="https://github.com/choiminjun94/TIL2024/assets/60457431/83c417f2-9353-4302-a3bd-54ed286755f6">
+
+
 ```html 
 
 <body style="margin: 0px;">
