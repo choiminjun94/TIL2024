@@ -508,7 +508,7 @@ a:hover {
 
 ## 배경 이쁘게 넣는 스킬들 & margin collapse
 
-> 강의 내용 정리
+<img width="1364" alt="스크린샷 2024-04-08 오후 3 59 09" src="https://github.com/choiminjun94/TIL2024/assets/60457431/e4739f28-b8c2-4537-9ebe-9b5fabffa882">
 
 ```txt
 
@@ -540,6 +540,8 @@ a:hover {
        이때 padding 1을 주면 해결
 
 ```
+
+Margin-collapsing 참고 url : https://velog.io/@raram2/CSS-마진-상쇄Margin-collapsing-원리-완벽-이해
 
 > 과제 정리
 
