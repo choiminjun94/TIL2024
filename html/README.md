@@ -505,3 +505,62 @@ a:hover {
 */
 
 ```
+
+## 배경 이쁘게 넣는 스킬들 & margin collapse
+
+> 강의 내용 정리
+
+```txt
+
+    1. 이미지 경로 추가 
+        background-image: url(이미지 경로 추가);
+
+    2. 배경 이미지 사이즈 조절
+        2.1  cover : 배경 짤려도 상관 없이 꽉채우기
+            background-size: cover;
+        2.2  contain : 배경이 안짤리게
+            background-size: contain;
+    3. 배경 이미지의 반복 여부와 반복 방향을 정합니다
+         background-repeat: no-repeat
+
+    4. 배경 이미지의 위치를 정하는 속성입니다
+        background-position: center;
+    
+    5. 스크롤 여부를 정합니다
+        background-attachment: fixed;
+
+    6. 필터 조절 
+        filter : 조건 입력 
+        단 사진에 필터를 입력 시 사진 안에 글도 필터가 적용
+
+    7. padding을 사용하는 이유 : margin collaps 때문이다.
+       margin collaps이란 
+       마진 겹침 현상 이다. 
+
+       이때 padding 1을 주면 해결
+
+```
+
+> 과제 정리
+
+```txt 
+
+    1. 글자 가운데로 정렬 : text-align: center
+
+    2. 버튼 가운데 정렬 
+        버튼을 가운데 정렬 하기 위해선 아래와 같은 구조를 가져야 한다. 
+        <div>
+            <button></button>
+        </div> 
+
+        2.1 div의 css
+            text-align: center;
+        2.2 button의 css
+            display :inline-block; 
+
+    3. 버튼 테두리 없애기
+        border: none;
+
+```
+
+
