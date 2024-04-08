@@ -586,3 +586,74 @@ position: absolute 시용 시 가운데 정렬
 
 ```
 
+```html 
+
+<body style="margin: 0px;">
+    <div class="main-background">
+        <h4 class="main-title">Welcome To Our Mall</h4>
+        <!-- 숙제 세일즈 문구 적용 (버튼 추가)-->
+        <p class="sale-contect">Let's go meet the best quality shoes in the world </p>
+        <button class="button-css"> Click Here </button>
+    </div>
+</body>
+
+```
+
+```css
+
+.main-background{
+    width: 100%;
+    height: 500px;
+    /* 이미지 경로 추가 */
+    background-image: url(./img/shoes.jpg);
+    /* cover : 배경 짤려도 상관 없이 꽉채우기  */
+    /* contain : 배경이 안짤리게 */
+    background-size: cover;
+    /* 배경 이미지의 반복 여부와 반복 방향을 정합니다 */
+    background-repeat: no-repeat;
+    /* 배경 이미지의 위치를 정하는 속성입니다 */
+    background-position: center;
+    /*  스크롤 여부를 정합니다 */
+    /*  background-attachment: fixed; */
+    /* 필터 적용 */
+    /* filter: brightness(70%); */
+
+    /*  margin collapse 때문에 적용 */
+    padding: 1px;   
+    position: relative;
+}
+.main-title{
+    color: white;
+    font-size: 50px;
+    margin-top: 100px;
+    /* text 가운데로 지정 */
+    text-align: center;
+    margin: 60px;
+}
+.sale-contect{
+    color: aliceblue;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+}
+.button-css{
+    padding: 15px;    
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    background-color: yellowgreen;
+    /* 테두리 선 없애기 */
+    border: none;
+    position: absolute;
+    /* 아래 :  position: absolute 시용 시 가운데 정렬*/
+    left: 0;
+    right: 0;
+    margin: auto;    
+    width: 200px;
+}
+
+
+
+```
