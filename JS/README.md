@@ -111,3 +111,57 @@ JS코드는 이전의 코드 처럼 document.getElementById를 사용하면 된�
 }
 ```
 
+### function 문법 사용법 
+
+> function 이란
+
+```txt 
+
+1. 긴코드를 짧은 단어로 축약하기  
+2. 코드 재사용에 좋음
+
+function 선언하기 
+
+function function명 (){} 
+
+
+```
+
+> function 사용 예시 (이전 동적 UI 만들기에 function을 선언) 
+
+``` html 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/main.css">
+</head>
+<body>
+    <!-- Alert박스 UI  만들가-->
+    <div class="alert-box" id="alert">알림창 
+        <button onclick="alertClose()" class="close" id="close_alert">닫기</button>
+    </div>
+    <!-- onclick 안에 JS의 코드를 작성 -->
+    <!-- function 입력 -->
+    <button onclick="alertOpen()">버튼</button>
+    
+    <script>
+
+        function alertOpen(){
+            document.getElementById('alert').style.display='block'
+            console.log("알림창 커기");
+        }
+
+        function alertClose(){
+            document.getElementById('alert').style.display='none'
+            console.log("알람창 끄기");
+        }
+    </script>
+</body>
+</html>
+
+```
+
