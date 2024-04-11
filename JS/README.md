@@ -47,3 +47,5 @@ hello라는 id를 가진 html를 찾아서 innnerhtml를 사용 하여 안뇽이
 </html>
 
 ```
+<img width="223" alt="스크린샷 2024-04-11 오후 9 31 54" src="https://github.com/choiminjun94/TIL2024/assets/60457431/dc7a3bc2-80e7-4bc6-8916-485b1bea3693">
+
