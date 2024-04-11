@@ -1,0 +1,13 @@
+.alert-box{
+    background-color: aqua;
+    padding: 20px;
+    color: white;
+    border-radius: 5px;
+
+    /* 평소엔 디스플레이 감추기 */
+    display: none;
+}
+
+.close{
+    display: block;
+}

@@ -1,4 +1,4 @@
-## JS Strat 
+## 02)_JS Strat 
 
 ### getElementById
 
@@ -28,10 +28,9 @@ hello라는 id를 가진 html를 찾아서 innnerhtml를 사용 하여 안뇽이
     <title>Document</title>
 </head>
 <body>
-    <!-- Alert박스 UI  만들가-->
+    <!-- JS로 HTML 조작 -->
     <h1 id="hello">안녕하세요</h1>
     <h1  id="id">JS 초보에요</h1>  
-    <!-- JS로 HTML 조작 -->
     <script>
    
         document.getElementById('hello').innerHTML='안뇽'
@@ -48,4 +47,64 @@ hello라는 id를 가진 html를 찾아서 innnerhtml를 사용 하여 안뇽이
 
 ```
 <img width="223" alt="스크린샷 2024-04-11 오후 9 31 54" src="https://github.com/choiminjun94/TIL2024/assets/60457431/dc7a3bc2-80e7-4bc6-8916-485b1bea3693">
+
+### 동적 UI 만드는 스텝 (Alert box  만들기)
+
+> Alert box 만들기
+
+``` txt 
+
+UI 만드는 Step 
+
+1. HTML/CSS 미리 디자인 
+2. 필요할 때 보여달라고 코드 작성
+
+onclick는 안에 JS코드를 작성하면 버튼이 실행 된다. 
+JS코드는 이전의 코드 처럼 document.getElementById를 사용하면 된다. 
+
+버튼 클릭 시 알람창이라는  UI가 나오고 닫기를 클릭 시 다시 UI가 사라지는 코드를 작성
+
+```
+
+``` html 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/main.css">
+</head>
+<body>
+    <!-- Alert박스 UI  만들가-->
+    <div class="alert-box" id="alert">알림창 
+        <button onclick="document.getElementById('alert').style.display='none'" class="close" id="close_alert">닫기</button>
+    </div>
+    <!-- onclick 안에 JS의 코드를 작성 -->
+    <button onclick="document.getElementById('alert').style.display='block'">버튼</button>
+    
+    <script>
+         
+    </script>
+</body>
+</html>
+
+```
+
+```css 
+.alert-box{
+    background-color: aqua;
+    padding: 20px;
+    color: white;
+    border-radius: 5px;
+
+    /* 평소엔 디스플레이 감추기 */
+    display: none;
+}
+
+.close{
+    display: block;
+}
+```
 
