@@ -4,3 +4,7 @@
 
 > HTML Study 내용
  <br/>
+
+ ## 02)\_JS
+
+ > JS 내용

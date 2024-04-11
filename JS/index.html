@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Alert박스 UI  만들가-->
+    <h1 id="hello">안녕하세요</h1>
+    <h1  id="id">JS 초보에요</h1>  
+    <!-- JS로 HTML 조작 -->
+    <script>
+   
+        document.getElementById('hello').innerHTML='안뇽'
+        document.getElementById('hello').style.color='red'
+
+        document.getElementById('id').innerHTML = 'JS 고수에요'
+        document.getElementById('id').style.color='pink'
+
+        // 안녕하세요 폰트사이즈 16px로 바꾸기
+       document.getElementById('hello').style.fontSize='16px';
+    </script>
+</body>
+</html>
