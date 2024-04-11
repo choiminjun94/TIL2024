@@ -66,6 +66,9 @@ JS코드는 이전의 코드 처럼 document.getElementById를 사용하면 된�
 
 ```
 
+![test](https://github.com/choiminjun94/TIL2024/assets/60457431/d391eda1-cca5-44cb-a9e4-f5a3de19e2fc)
+
+
 ``` html 
 
 <!DOCTYPE html>
