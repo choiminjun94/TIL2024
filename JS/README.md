@@ -301,8 +301,87 @@ function function명( 파라미터 ){}
 </html>
 
 ```
+### JS 이벤트리스너 
+
+> getElementsByClassName
+
+```txt 
+
+만약에 id가 없을시에는 class을 이용 할수 있는다 
+그때에는 getElementsByClassName를 사용한다. 
+주의 할 점은 클래스는 여러군데에서 사용할 수 있으닌 조심 해야한다. 그에 반해 id는 하나이다. 
+동일명 class가 여러개일 시 특정 class를 사용하기 위해서는 인덱싱 이란것을 사용해야 한다. 
+
+getElementsByClassName를 사용 시 인덱싱 사용하는 방법은 하기에 정리 하겠다. 
+getElementsByClassName('title1')[0]
+
+```
+> 이벤트 리스너 
+
+```txt 
+
+이벤트가 발생 했을때 그 처리를 담당하는 함수이다. 
+
+addEventListener(파라미터 2개가 필요) 
+설명 : getElementById의 아이디를 클릭시 function (콜백 함수) 실행
+콜백 함수는 코드를 순차적으로 실행 할때 가끔 보임
+
+event란 행위를 이벤트라고 한다. 감시자의 역할을 수행 하는
+ 
+addEventListener 이벤트 종류 
+url : https://yoonjong-park.tistory.com/entry/addEventListener-이벤트리스너-종류
+
+```
+
+``` html 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/main.css">
+</head>
+<body>
+    <!-- Alert박스 UI  만들가-->
+    <div class="alert-box" id="alert">
+        <p class="title1" id="test">알림창</p> 
+
+        <button id="close">닫기</button>
+    </div>
+
+    <button onclick="아이디_입력()">버튼1</button>
+
+    <!-- 버튼1 클릭 시 비번 입력 하세요 -->
+    <button onclick="비번_입력()">버튼2</button>
 
 
+    <script>
+        function alertClose(){
+            document.getElementById('alert').style.display='none';
+        }
+        // 이벤트리스너 사용 
+        // Line 351에서 실행 
+        function 아이디_입력(){
+            document.getElementById('close').addEventListener('click', function(){
+                document.getElementById('alert').style.display= 'none';
+            });
+
+            function alertClose(구멍){
+                document.getElementById('alert').style.display= 구멍;
+            }
+            document.getElementsByClassName('title1')[0].innerHTML ='아이디 입력'
+            document.getElementById('alert').style.display='block'
+        }
+
+        function 비번_입력(){
+            document.getElementById('test').innerHTML ='비번 입력'
+            document.getElementById('alert').style.display='block'
+        }
+    </script>
+</body>
+</html>
 
 
-
+```
