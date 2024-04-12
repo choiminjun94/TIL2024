@@ -150,7 +150,7 @@ function function명 (){}
     
     <script>
 
-        function alertOpen(구멍){
+        function alertOpen(){
             document.getElementById('alert').style.display='block'
             console.log("알림창 커기");
         }
@@ -255,6 +255,47 @@ function function명( 파라미터 ){}
             document.getElementById('alert').style.display='none';
         }
 
+    </script>
+</body>
+</html>
+
+```
+
+> 위에 과제를 파리미터를 사용하여 개발
+> 매우 좋은 예시 이다. 
+
+``` html 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/main.css">
+</head>
+<body>
+    <!-- Alert박스 UI  만들가-->
+    <div class="alert-box" id="alert">
+        <p id="test">알림창</p> 
+        <button onclick="alertClose()">닫기</button>
+    </div>
+
+    <!-- 파리미터 사용하여 개발  -->
+    <!-- 버튼1 클릭 시 아이디 입력 하세요 -->
+    <!-- 버튼2 클릭 시 비번 입력 하세요 -->
+
+    <button onclick="파라미터_공부('제목입력','block')">버튼1</button>
+    <button onclick="파라미터_공부('비번 입력', 'block')">버튼2</button>
+
+    <script>
+        function alertClose(){
+            document.getElementById('alert').style.display='none';
+        }
+        function 파라미터_공부(파라미터_공부1, 파라미터_공부2){
+            document.getElementById('test').innerHTML=파라미터_공부1
+            document.getElementById('alert').style.display=파라미터_공부2
+        }
     </script>
 </body>
 </html>

@@ -13,27 +13,27 @@
         <button onclick="alertClose()">닫기</button>
     </div>
 
+    <!-- 파리미터 사용하여 개발  -->
     <!-- 버튼1 클릭 시 아이디 입력 하세요 -->
-    <button onclick="아이디_입력()">버튼1</button>
+    <!-- 버튼2 클릭 시 비번 입력 하세요 -->
 
-    <!-- 버튼1 클릭 시 비번 입력 하세요 -->
-    <button onclick="비번_입력()">버튼2</button>
+    <button onclick="파라미터_공부('제목입력','block')">버튼1</button>
+    <button onclick="파라미터_공부('비번 입력', 'block')">버튼2</button>
 
     <script>
-    
-        function 아이디_입력(){
-            document.getElementById('test').innerHTML ='아이디 입력'
-            document.getElementById('alert').style.display='block'
-        }
 
-        function 비번_입력(){
-            document.getElementById('test').innerHTML ='비번 입력'
-            document.getElementById('alert').style.display='block'
-        }
         
         function alertClose(){
             document.getElementById('alert').style.display='none';
         }
+
+        function 파라미터_공부(파라미터_공부1, 파라미터_공부2){
+            document.getElementById('test').innerHTML=파라미터_공부1
+            document.getElementById('alert').style.display=파라미터_공부2
+        }
+        
+
+
 
     </script>
 </body>
