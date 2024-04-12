@@ -385,3 +385,81 @@ url : https://yoonjong-park.tistory.com/entry/addEventListener-이벤트리스�
 
 
 ```
+### 서브메뉴 만들어보기와 classList 다루기
+
+> 부트스트랩 설치 
+
+```txt 
+
+부트스트랩 url :  https://getbootstrap.kr/docs/5.1/getting-started/introduction/
+
+버전 선택
+
+스타터 템플릿 복붙 
+
+```
+
+```html 
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <span class="navbar-brand">Navbar</span>
+          <button class="navbar-toggler" type="button">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+    </nav> 
+    <!-- 클래스 탈부착  -->
+    <!-- 이미 작성한 클래스에서 띄어쓰기를 한 이후 작성 -->
+
+    <!-- 애니메이션 추가 쉬움 -->
+    <!-- 나중에 재사용 편리 -->
+    <ul class="list-group" id="test1" >
+        <li class="list-group-item">An item</li>
+        <li class="list-group-item">A second item</li>
+        <li class="list-group-item">A third item</li>
+        <li class="list-group-item">A fourth item</li>
+        <li class="list-group-item">And a fifth one</li>
+    </ul>
+  </body>
+
+  <script>
+
+    // querySelector 안에 css 셀럭터를 넣어서 내가 원하는 요소를 추가 가능
+    // 클래스를 표현 시 .을 찍기에 .을 추가
+    // id를 표현 하고 싶을 때는 #을 추가 
+
+    // 특징 중 가장 위에 것만 찾아줌
+    // 다 찾아주기 위해선 querySelectorAll을 입력
+    // 특정 것을 쓰기 위해선 인덱싱을 하면 된다. 
+    document.querySelector('.list-group')
+    // document.querySelector('.#test1')
+
+
+    document.getElementsByClassName('navbar-toggler')[0].addEventListener('click', function(){
+        // ul의 클래스 뒤에 show라는 클래스를 추가! 
+        // 모르는 것 이기에 구글링 해서 찾아서 넣어야 함
+
+        // toggle show가 존재 시 제거, 존재치 않을 시 추가
+        document.getElementsByClassName('list-group')[0].classList.toggle('show');
+    })
+  </script>
+</html>
+
+```

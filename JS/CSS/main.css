@@ -11,3 +11,10 @@
 .close{
     display: block;
 }
+
+.list-group{
+    display: none;
+}
+.show{
+    display: block;
+}
