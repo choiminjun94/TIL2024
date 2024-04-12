@@ -150,7 +150,7 @@ function function명 (){}
     
     <script>
 
-        function alertOpen(){
+        function alertOpen(구멍){
             document.getElementById('alert').style.display='block'
             console.log("알림창 커기");
         }
@@ -164,4 +164,100 @@ function function명 (){}
 </html>
 
 ```
+
+### function 파리미터 문법
+
+
+``` txt 
+파라미터 사용
+
+function function명( 파라미터 ){}
+파라미터에  함수를 업데이트 할수 있다. 예를들면 현재 display = 자리에 block이라고 직접적으로 입력치 않고 파리미터를 입력 하는 것이다. 
+
+또한 함수를 하나를 가지고 2종류의 코드를 실행 할수 있다.
+
+```
+
+> 파라미터 사용 예시를 밑에 정리 (함수 1개로 2종류의 코드 실행)
+
+``` html 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/main.css">
+</head>
+<body>
+    <!-- Alert박스 UI  만들가-->
+    <div class="alert-box" id="alert">알림창 
+        <button onclick="alertOpen('none')" class="close" id="close_alert">닫기</button>
+    </div>
+    <!-- onclick 안에 JS의 코드를 작성 -->
+    <!-- function 입력 -->
+    <button onclick="alertOpen('block')">버튼</button>
+    
+    <script>
+        
+        function alertOpen(파리미터_테스트){
+            document.getElementById('alert').style.display=파리미터_테스트
+            console.log("알림창 커기");
+        }
+    </script>
+</body>
+</html>
+
+> 버튼1 클릭 시 아이디 입력 이라는 창 나오기 
+> 버튼2 클릭 시 비번 입력 이라는 창 나오기
+
+``` html 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/main.css">
+</head>
+<body>
+    <!-- Alert박스 UI  만들가-->
+    <div class="alert-box" id="alert">
+        <p id="test">알림창</p> 
+        <button onclick="alertClose()">닫기</button>
+    </div>
+
+    <!-- 버튼1 클릭 시 아이디 입력 하세요 -->
+    <button onclick="아이디_입력()">버튼1</button>
+
+    <!-- 버튼1 클릭 시 비번 입력 하세요 -->
+    <button onclick="비번_입력()">버튼2</button>
+
+    <script>
+    
+        function 아이디_입력(){
+            document.getElementById('test').innerHTML ='아이디 입력'
+            document.getElementById('alert').style.display='block'
+        }
+
+        function 비번_입력(){
+            document.getElementById('test').innerHTML ='비번 입력'
+            document.getElementById('alert').style.display='block'
+        }
+        
+        function alertClose(){
+            document.getElementById('alert').style.display='none';
+        }
+
+    </script>
+</body>
+</html>
+
+```
+
+
+
+
 
