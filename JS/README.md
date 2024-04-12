@@ -209,8 +209,12 @@ function function명( 파라미터 ){}
 </body>
 </html>
 
+```
 > 버튼1 클릭 시 아이디 입력 이라는 창 나오기 
 > 버튼2 클릭 시 비번 입력 이라는 창 나오기
+
+![test2](https://github.com/choiminjun94/TIL2024/assets/60457431/1d87e037-7804-49cf-b0d0-9a85b2e99628)
+
 
 ``` html 
 
